@@ -11,16 +11,34 @@ Heading: Ubuntu
 Body: Lora
 */
 
-* {
-    box-sizing: border-box;
-}
-
 @import url('https://fonts.googleapis.com/css?family=Lora:400,700,700i|Ubuntu:400,700');
 
-
+body {
+	padding-top: 50px;
+}
 
 img {
   max-width:  200px;
 }
+
+/* Navigation */
+.navbar {
+  border-radius: 0;
+  border: 0;
+  background-color: #402a0f;
+}
+
+
+/* logo clearfix */
+.navbar-brand{
+  padding: 0;
+  margin: 0;
+}
+
+.navbar.footer {
+	background-color: white;
+}
+
+
 
 /* Text */
