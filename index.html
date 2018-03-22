@@ -3,75 +3,45 @@
 
 <head>
     <meta charset="UTF-8">
+    <title>Re-cycle</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="css/styles.css"> -->
-    <link rel="stylesheet" type="text/css" href="css/960_12_col.css" />
-    <title>Re-cycle</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
 </head>
-<style>
-body {
-    width: 960px;
-    margin: 0 auto;
-}
-
-#content {
-    overflow: auto;
-    height: 100%;
-}
-
-#navbar,
-#feature,
-#footer {
-    background-color: #efefef;
-    padding: 10px;
-    margin: 10px;
-}
-
-.column1,
-.column2,
-.column3 {
-    background-color: #efefef;
-    width: 300px;
-    float: left;
-    margin: 10px;
-}
-
-li {
-    display: inline;
-    padding: 5px;
-}
-</style>
 
 <body>
-    <div id="header">
+    <div class="container">
         <header>
             <!--skip navigation for screen readers -->
             <a href="#content">Skip to content</a>
-            <div class="navbar">
-                <nav>
-                    <!-- Responsive icon for mobiles -->
-                    <a href="#" id="menu-icon"></a>
-                    <ul class="topnav">
-                        <li class="home"><a href="#">Home</a></li>
-                        <li class="trails"><a class="active" href="#about">About us</a></li>
-                        <li class="about"><a href="#trails">Trails</a></li>
-                        <li class="contact"><a href="#contact">Contact us</a></li>
-                    </ul>
-                </nav>
+            <nav>
+                <!-- Responsive icon for mobiles -->
+                <a href="#" id="menu-icon"></a>
+                <ul class="topnav">
+                    <li class="home"><a href="#">Home</a></li>
+                    <li class="trails"><a class="active" href="#about">About us</a></li>
+                    <li class="about"><a hre=f "#trails">Trails</a></li>
+                    <li class="contact"><a href="#contact">Contact us</a></li>
+                </ul>
+            </nav>
+            <div class="carousel">
+                <img src="images/carousel-bike.jpg" alt="Bike photo">
+                <img src="images/carousel-direction.jpg" alt="Direction sign">
+                <img src="images/carousel-handle.jpg" alt="Bike handle">
+                <img src="images/carousel-wagon.jpg" alt="Bike wagon">
+                <img src="images/carousel-lander.jpg" alt="Exotic Bike">
             </div>
         </header>
-    </div>
-    <div id="content">
-        <main>
-            <div id="feature">
+        <div class="main">
+            <div id="feature" class="grid_12">
                 <h1>Recycle</h1>
                 <h2>Guided Cycling Tours</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi sapiente sit at quisquam accusamus omnis magnam ipsa, veniam odit, minus maxime quae qui temporibus doloribus!</p>
                 <button class="btn1" type="button">Learn More About Us</button>
             </div>
             <section>
-                <div id="about" class="article column1">
+                <div id="about">
                     <article>
                         <h2>About us</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error ipsa quo illum excepturi autem voluptatem maiores tempora quasi, temporibus, architecto ratione delectus modi qui cum?</p>
@@ -87,7 +57,7 @@ li {
                 </div>
             </section>
             <section>
-                <div id="trails" class="article column2">
+                <div id="trails" class="article grid_4">
                     <article>
                         <h2>Bike Trails</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error ipsa quo illum excepturi autem voluptatem maiores tempora quasi, temporibus, architecto ratione delectus modi qui cum?</p>
@@ -97,57 +67,29 @@ li {
                 </div>
             </section>
             <section>
-                <div id="trails" class="article column3">
-                    <artcile>
+                <div id="trails" class="article grid_4">
+                    <article>
                         <h2>Mo I Rana</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ducimus magnam minus quisquam cupiditate, expedita quas, deleniti, error ab debitis reprehenderit. Quos impedit eaque ab.</p>
-                    </artcile>
+                    </article>
                 </div>
             </section>
-            <form>
-                <!--             <aside>
-                <div id="contact">
-                    <h2>Contact us</h2>
-                    <div class="container">
-                        <form action="#">
-                            <div class="row">
-                                <div class="col-25">
-                                    <label for="fname">Name</label>
-                                </div>
-                                <div class="col-75">
-                                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-25">
-                                    <label for="lname">Last Name</label>
-                                </div>
-                                <div class="col-75">
-                                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-25">
-                                    <label for="subject">Subject</label>
-                                </div>
-                                <div class="col-75">
-                                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                                </div>
-                            </div>
-                            <div class="row container">
-                                <input class="bt2" type="submit" value="Submit">
-                            </div>
-                        </form>
-                    </div>
-            </aside> -->
-        </main>
+        </div>
+        <!-- Main end -->
+        <footer>
+                <nav>
+                    <ul>
+                        <li><a href="#">Terms of use</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                    </ul>
+                </nav>
+                <p>&copy; 2017 re-cycle.com</p>
+        </footer>
     </div>
-    <!-- Main wrapper end -->
+    <!-- Container end -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="js/myscript.js"></script>
 </body>
-<footer>
-    <div id="footer">
-        <p>&copy; 2017 re-cycle.com</p>
-    </div>
-</footer>
 
 </html>
