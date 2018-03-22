@@ -5,45 +5,50 @@
     <meta charset="UTF-8">
     <title>Re-cycle</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <!--skip navigation for screen readers -->
-            <a href="#content">Skip to content</a>
-            <nav>
-                <!-- Responsive icon for mobiles -->
-                <a href="#" id="menu-icon"></a>
-                <ul class="topnav">
-                    <li class="home"><a href="#">Home</a></li>
-                    <li class="trails"><a class="active" href="#about">About us</a></li>
-                    <li class="about"><a hre=f "#trails">Trails</a></li>
-                    <li class="contact"><a href="#contact">Contact us</a></li>
-                </ul>
-            </nav>
-            <div class="carousel">
-                <img src="images/carousel-bike.jpg" alt="Bike photo">
-                <img src="images/carousel-direction.jpg" alt="Direction sign">
-                <img src="images/carousel-handle.jpg" alt="Bike handle">
-                <img src="images/carousel-wagon.jpg" alt="Bike wagon">
-                <img src="images/carousel-lander.jpg" alt="Exotic Bike">
-            </div>
-        </header>
-        <div class="main">
-            <div id="feature" class="grid_12">
-                <h1>Recycle</h1>
+    <header>
+        <!--skip navigation for screen readers -->
+        <a href="#content">Skip to content</a>
+        <nav>
+            <!-- Responsive icon for mobiles -->
+            <a href="#" id="menu-icon"></a>
+            <ul class="nav">
+                <li><a href="#content">Home</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#trails">Trails</a></li>
+                <li><a href="#contact">Contact us</a></li>
+            </ul>
+        </nav>
+        <div class="carousel">
+            <img src="images/carousel-bike.jpg" alt="Bike photo">
+            <img src="images/carousel-direction.jpg" alt="Direction sign">
+            <img src="images/carousel-handle.jpg" alt="Bike handle">
+            <img src="images/carousel-wagon.jpg" alt="Bike wagon">
+            <img src="images/carousel-lander.jpg" alt="Exotic Bike">
+        </div>
+    </header>
+    <!-- mission page -->
+    <div id="content" class="main">
+        <div class="page" id="mission">
+            <div class="content container">
+                <img src="images/logo.png" alt="logo">
                 <h2>Guided Cycling Tours</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi sapiente sit at quisquam accusamus omnis magnam ipsa, veniam odit, minus maxime quae qui temporibus doloribus!</p>
                 <button class="btn1" type="button">Learn More About Us</button>
             </div>
-            <section>
-                <div id="about">
+            <!-- Content Container-->
+        </div>
+        <!-- about us page -->
+        <div class="page" id="about">
+            <div class="content container">
+                <h2>About us</h2>
+                <div class="row">
                     <article>
-                        <h2>About us</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error ipsa quo illum excepturi autem voluptatem maiores tempora quasi, temporibus, architecto ratione delectus modi qui cum?</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, ipsa, incidunt. Inventore quibusdam explicabo necessitatibus ipsam sint sed, repellendus cum eveniet ullam, maiores earum, eos!</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam eius facilis animi, alias laudantium asperiores, inventore, odio consequuntur quaerat minima deserunt possimus beatae. Officiis, quisquam?</p>
@@ -55,41 +60,59 @@
                         </div>
                     </article>
                 </div>
-            </section>
-            <section>
-                <div id="trails" class="article grid_4">
-                    <article>
-                        <h2>Bike Trails</h2>
+                <!-- end row-->
+            </div>
+            <!-- end Content container -->
+        </div>
+        <!-- end about page -->
+        <!-- trails page -->
+        <div class="page" id="trails">
+            <div class="content container">
+                <h2>Bike Trails</h2>
+                <div class="row">
+                    <article class="trail col-sm-4">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error ipsa quo illum excepturi autem voluptatem maiores tempora quasi, temporibus, architecto ratione delectus modi qui cum?</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, ipsa, incidunt. Inventore quibusdam explicabo necessitatibus ipsam sint sed, repellendus cum eveniet ullam, maiores earum, eos!</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam eius facilis animi, alias laudantium asperiores, inventore, odio consequuntur quaerat minima deserunt possimus beatae. Officiis, quisquam?</p>
                     </article>
-                </div>
-            </section>
-            <section>
-                <div id="trails" class="article grid_4">
-                    <article>
-                        <h2>Mo I Rana</h2>
+                    <article class="trail col-sm-4">
+                        <img class="maps" src="images/trail1.png" alt="map">
+                        <h3>Vindskjermen - Fageråsen</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ducimus magnam minus quisquam cupiditate, expedita quas, deleniti, error ab debitis reprehenderit. Quos impedit eaque ab.</p>
+                    </article>
+                    <article class="trail col-sm-4">
+                        <img class="maps" src="images/trail2.png" alt="map">
+                        <h3>Idavollen</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ducimus magnam minus quisquam cupiditate, expedita quas, deleniti, error ab debitis reprehenderit. Quos impedit eaque ab.</p>
+                    </article>
+                    <article class="trail col-sm-4">
+                        <img class="maps" src="images/trail3.png" alt="map">
+                        <h3>Selforsfjellet</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ducimus magnam minus quisquam cupiditate, expedita quas, deleniti, error ab debitis reprehenderit. Quos impedit eaque ab.</p>
                     </article>
                 </div>
-            </section>
+                <!-- end row -->
+            </div>
+            <!-- end content container -->
         </div>
-        <!-- Main end -->
-        <footer>
-                <nav>
-                    <ul>
-                        <li><a href="#">Terms of use</a></li>
-                        <li><a href="#">Privacy policy</a></li>
-                    </ul>
-                </nav>
-                <p>&copy; 2017 re-cycle.com</p>
-        </footer>
+        <!-- end Contact us page -->
+        <div class="page" id="contact">
+            <h2>Contact us</h2>
+        </div>
     </div>
-    <!-- Container end -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <script src="js/myscript.js"></script>
+    <!-- Main end -->
+    <footer>
+        <div>Call us at <span class="phone">123-456-7891</span></div>
+        <nav>
+            <ul>
+                <li><a href="#">Terms of use</a></li>
+                <li><a href="#">Privacy policy</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2017 re-cycle.com</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
