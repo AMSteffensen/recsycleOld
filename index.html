@@ -6,51 +6,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="css/styles.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/960_12_col.css" />
     <title>Re-cycle</title>
 </head>
 <style>
 body {
     width: 960px;
-    margin: 0;
+    margin: 0 auto;
+}
+
+#content {
+    overflow: auto;
+    height: 100%;
+}
+
+#navbar,
+#feature,
+#footer {
+    background-color: #efefef;
+    padding: 10px;
+    margin: 10px;
+}
+
+.column1,
+.column2,
+.column3 {
+    background-color: #efefef;
+    width: 300px;
+    float: left;
+    margin: 10px;
+}
+
+li {
+    display: inline;
+    padding: 5px;
 }
 </style>
 
 <body>
     <div id="header">
         <header>
-            <!--top navigation-->
+            <!--skip navigation for screen readers -->
             <a href="#content">Skip to content</a>
             <div class="navbar">
                 <nav>
+                    <!-- Responsive icon for mobiles -->
                     <a href="#" id="menu-icon"></a>
                     <ul class="topnav">
                         <li class="home"><a href="#">Home</a></li>
-                        <li class="tutorials"><a class="active" href="#">About us</a></li>
-                        <li class="about"><a href="#">Trails</a></li>
-                        <li class="news"><a href="#">Contact us</a></li>
+                        <li class="trails"><a class="active" href="#about">About us</a></li>
+                        <li class="about"><a href="#trails">Trails</a></li>
+                        <li class="contact"><a href="#contact">Contact us</a></li>
                     </ul>
                 </nav>
             </div>
-            <h1>Recycle</h1>
-            <h2>Guided Cycling Tours</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi sapiente sit at quisquam accusamus omnis magnam ipsa, veniam odit, minus maxime quae qui temporibus doloribus!</p>
-            <button class="btn" type="button">Learn More About Us</button>
         </header>
     </div>
     <div id="content">
         <main>
+            <div id="feature">
+                <h1>Recycle</h1>
+                <h2>Guided Cycling Tours</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi sapiente sit at quisquam accusamus omnis magnam ipsa, veniam odit, minus maxime quae qui temporibus doloribus!</p>
+                <button class="btn1" type="button">Learn More About Us</button>
+            </div>
             <section>
-                <div class="article column1">
+                <div id="about" class="article column1">
                     <article>
                         <h2>About us</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error ipsa quo illum excepturi autem voluptatem maiores tempora quasi, temporibus, architecto ratione delectus modi qui cum?</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, ipsa, incidunt. Inventore quibusdam explicabo necessitatibus ipsam sint sed, repellendus cum eveniet ullam, maiores earum, eos!</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam eius facilis animi, alias laudantium asperiores, inventore, odio consequuntur quaerat minima deserunt possimus beatae. Officiis, quisquam?</p>
+                        <div class="calltoaction">
+                            <img src="images/recycle.png" alt="Recycle bike" />
+                            <div id="btn2">
+                                <button type="button">Recycle-a-Bike</button>
+                            </div>
+                        </div>
                     </article>
                 </div>
             </section>
             <section>
-                <div class="article column2">
+                <div id="trails" class="article column2">
                     <article>
                         <h2>Bike Trails</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error ipsa quo illum excepturi autem voluptatem maiores tempora quasi, temporibus, architecto ratione delectus modi qui cum?</p>
@@ -60,59 +97,57 @@ body {
                 </div>
             </section>
             <section>
-                <img src="images/recycle.png" alt="Recycle bike" />
-                <div>
-                    <button type="button">Recycle-a-Bike</button>
-                </div>
-            </section>
-            <section>
-                <div class="article column3">
+                <div id="trails" class="article column3">
                     <artcile>
                         <h2>Mo I Rana</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ducimus magnam minus quisquam cupiditate, expedita quas, deleniti, error ab debitis reprehenderit. Quos impedit eaque ab.</p>
                     </artcile>
                 </div>
             </section>
-            <section>
-                <h2>Contact us</h2>
-                <div class="container">
-                    <form action="#">
-                        <div class="row">
-                            <div class="col-25">
-                                <label for="fname">Name</label>
+            <form>
+                <!--             <aside>
+                <div id="contact">
+                    <h2>Contact us</h2>
+                    <div class="container">
+                        <form action="#">
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="fname">Name</label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                                </div>
                             </div>
-                            <div class="col-75">
-                                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="lname">Last Name</label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-25">
-                                <label for="lname">Last Name</label>
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="subject">Subject</label>
+                                </div>
+                                <div class="col-75">
+                                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                                </div>
                             </div>
-                            <div class="col-75">
-                                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                            <div class="row container">
+                                <input class="bt2" type="submit" value="Submit">
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-25">
-                                <label for="subject">Subject</label>
-                            </div>
-                            <div class="col-75">
-                                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                            </div>
-                        </div>
-                        <div class="row container">
-                            <input class="button" type="submit" value="Submit">
-                        </div>
-                    </form>
-                </div>
-            </section>
+                        </form>
+                    </div>
+            </aside> -->
         </main>
     </div>
     <!-- Main wrapper end -->
 </body>
 <footer>
-    <p>&copy; 2017 re-cycle.com</p>
+    <div id="footer">
+        <p>&copy; 2017 re-cycle.com</p>
+    </div>
 </footer>
 
 </html>
