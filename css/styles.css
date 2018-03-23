@@ -13,78 +13,93 @@ font-family: 'Ubuntu', sans-serif;
 @import url('https://fonts.googleapis.com/css?family=Lora:400,700,700i|Ubuntu:300,400,700');
 
 body {
-	font-family: 'Ubuntu', sans-serif;
-	font-weight: 100;
-	font-size: 2em;
-	position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 100;
+    font-size: 2em;
+    position: relative;
 }
 
-h1, h2, h3 {
-	font-family: 'Lora', serif;
-	fgitgiont-weight: 400;
-	margin: 0;
+h1,
+h2,
+h3 {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    margin: 0;
 }
+
+
 
 /* Header Navigation */
+
 .navbar {
-  border-radius: 0;
-  border: 0;
-  background-color: rgba(64, 42, 15, 0.5);
-  color: white;
+    border-radius: 0;
+    border: 0;
+    background-color: rgba(64, 42, 15, 0.5);
+    color: white;
 }
 
- header .navbar {
-	padding: 20px 0;
-} 
+header .navbar {
+    padding: 20px 0;
+}
+
+
 
 /* Navbar change default styles*/
+
 .navbar-default .navbar-nav>li>a {
     color: #ebe560;
 }
 
+
+
 /* when navbar element is active change font weight to bold */
+
 header .navbar-default .navbar-nav .active a {
-	font-weight: 700;
-	padding-bottom: 20px;
-	text-decoration:underline;
-	color:#91d940;
-	background-color: transparent;
-	text-shadow:  none;
+    font-weight: 700;
+    padding-bottom: 20px;
+    text-decoration: underline;
+    color: #91d940;
+    background-color: transparent;
+    text-shadow: none;
 }
 
 header .navbar-default .navbar-nav .active a:hover {
-	color: #E15D5F;
+    color: #E15D5F;
     background-color: transparent;
 }
+
+
+
 /* Navbar brand logo */
- .navbar-brand{
-  padding: 0;
-  margin: 0;
-  border-bottom: 4px solid #91d940;
-} 
+
+.navbar-brand {
+    padding: 0;
+    margin: 0;
+    border-bottom: 4px solid #91d940;
+}
 
 header .navbar-brand {
-	background: url(../images/logo.png);
-	background-repeat: no-repeat;
-	background-position: 15px 0px;
-	height: auto;
+    background: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-position: 15px 0px;
+    height: auto;
 }
 
 header .navbar-brand h1 {
-	color: white;
-	margin: 0;
-	font-size: 1.8em;
-	font-weight: 700;
-	padding-left: 105px;
+    color: white;
+    margin: 0;
+    font-size: 1.8em;
+    font-weight: 700;
+    padding-left: 105px;
 }
 
 header .navbar-brand span.subhead {
-	font-family: 'Lora', serif;
-	padding-left: 105px;
-	font-size: 	.7em;
-	font-weight: 400;
-	display: block;
-	text-transform: uppercase;
+    font-family: 'Lora', serif;
+    padding-left: 105px;
+    font-size: .7em;
+    font-weight: 400;
+    display: block;
+    text-transform: uppercase;
 }
 
 
@@ -96,83 +111,153 @@ header .navbar-brand span.subhead {
     color: #fff;
 }
 
+
+
 /** Navbar toggle **/
+
 header .navbar-toggle {
-	background-color:#5f91ff;
-}
-/* Change default background collor of toggle button */
-header .navbar-default .navbar-toggle .icon-bar {
-	background-color: #ebe560;
+    background-color: #5f91ff;
 }
 
+
+
+/* Change default background collor of toggle button */
+
+header .navbar-default .navbar-toggle .icon-bar {
+    background-color: #ebe560;
+}
+
+
+
 /* Change color of toggle button both on focus and hover to white */
-.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
     background-color: #fff;
 }
 
-/* Make more contrast to navbar when active */
-header .navbar-collapse {
-	background-color: rgba(0,0,0, .5);
+@media only screen and (max-width: 600px) {
+    /* Make more contrast to navbar when active */
+    header .navbar-collapse {
+        background-color: rgba(0, 0, 0, .5);
+    }
 }
+
+
 
 /* Footer navigation */
+
 .navbar.footer {
-	background-color: white;
+    background-color: white;
 }
 
+
+
+/** PAGE **/
+
 .page {
-	padding: 50px 0;
+    padding: 50px 0;
 }
 
 .page h2 {
-	text-align: center;
-	 margin-bottom: 30px; 
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-.calltoaction img {
-    margin-left: 0;
-    margin-right: 0;
+
+/** PAGE - Mission **/
+
+#mission {
+    background-color: #91d940;
+    background-image: linear-gradient(to bottom, #16a84a, #91d940);
+    border-top: 50px solid rgba(64, 42, 15, .5);
+}
+
+/* Style mission text to make it stand out */
+.mission {
+	color: white;
+	text-indent: 50px;
+	letter-spacing: 3px;
+	text-shadow: 3px 2px rgba(0,0,0,.5);
+}
+
+
+
+/* Disable carousel on small screen devices */
+@media only screen and (max-width: 360px) {
+    #featured {
+        display: none;
+    }
+	/* Move mission area down */
+    #mission {
+        background-color: #91d940;
+        background-image: linear-gradient(to bottom, #16a84a, #91d940);
+        padding-top: 100px;
+    }
+}
+
+
+/** PAGE - About us **/
+
+#about {
+ margin: 20px 0;
+ text-align: center;
+}
+
+#about img {
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
     width: 50%;
 }
+
+
+/** PAGE - Bike trails **/
+
+
 
 /* Hide skip to main content link 
 Source: https://accessibility.oit.ncsu.edu/ 2018 IT Acvcessibilty Handbook - Skip to main content
 */
-a.skip-main {
-	left:-999px;
-    position:absolute;
-    top:auto;
-    width:1px;
-    height:1px;
-    overflow:hidden;
-    z-index:-999;
 
+a.skip-main {
+    left: -999px;
+    position: absolute;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: -999;
 }
+
+
 
 /* Show skip to content when tabing */
 
-a.skip-main:focus, a.skip-main:active {
+a.skip-main:focus,
+a.skip-main:active {
     color: #fff;
-    background-color:#000;
+    background-color: #000;
     left: auto;
     top: auto;
     width: 30%;
     height: auto;
-    overflow:auto;
+    overflow: auto;
     margin: 80px 30%;
-    padding:25px;
+    padding: 25px;
     border-radius: 25px;
-    border:15px solid #ebe560;
-    text-align:center;
-    font-size:1.2em;
+    border: 15px solid #ebe560;
+    text-align: center;
+    font-size: 1.2em;
     z-index: 999;
 }
 
 @media only screen and (max-width: 600px) {
-    a.skip-main:focus, a.skip-main:active {   
-    margin: 80px 30%;
-    padding:5px;
-    border-radius: 25px;
-    width: auto;
+    a.skip-main:focus,
+    a.skip-main:active {
+        margin: 80px 30%;
+        padding: 5px;
+        border-radius: 25px;
+        width: auto;
     }
 }
