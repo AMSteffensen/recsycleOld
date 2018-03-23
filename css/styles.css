@@ -1,4 +1,4 @@
-/* /*
+/* 
 Colors
 #16a84a;
 #91d940;
@@ -8,6 +8,10 @@ Colors
 
 font-family: 'Lora', serif;
 font-family: 'Ubuntu', sans-serif;
+
+Author: 
+Andreas Steffensen 
+2018
 */
 
 @import url('https://fonts.googleapis.com/css?family=Lora:400,700,700i|Ubuntu:300,400,700');
@@ -29,8 +33,6 @@ h3 {
 
 
 
-
-
 /* Header Navigation */
 
 .navbar {
@@ -43,8 +45,6 @@ h3 {
 header .navbar {
     padding: 20px 0;
 }
-
-
 
 
 
@@ -71,9 +71,6 @@ header .navbar-default .navbar-nav .active a:hover {
     color: #E15D5F;
     background-color: transparent;
 }
-
-
-
 
 
 /* Navbar brand logo */
@@ -118,9 +115,6 @@ header .navbar-brand span.subhead {
 }
 
 
-
-
-
 /** Navbar toggle **/
 
 header .navbar-toggle {
@@ -133,9 +127,6 @@ header .navbar-toggle {
 header .navbar-default .navbar-toggle .icon-bar {
     background-color: #ebe560;
 }
-
-
-
 
 
 /* Change color of toggle button both on focus and hover to white */
@@ -165,8 +156,6 @@ header .navbar-default .navbar-toggle .icon-bar {
 }
 
 
-
-
 /** PAGE - Mission **/
 
 #mission {
@@ -174,7 +163,6 @@ header .navbar-default .navbar-toggle .icon-bar {
     background-image: linear-gradient(to bottom, #16a84a, #91d940);
     border-top: 50px solid rgba(64, 42, 15, .5);
 }
-
 
 
 /* Style mission text to make it stand out */
@@ -209,8 +197,6 @@ header .navbar-default .navbar-toggle .icon-bar {
     /* text-align: center; */
 }
 
-
-
 #about h2 {
     margin-bottom: 10px;
 }
@@ -229,8 +215,6 @@ header .navbar-default .navbar-toggle .icon-bar {
 .card img {
     margin: 0 auto;
 }
-
-
 
 
 /* Styling buttons */
@@ -274,13 +258,6 @@ header .navbar-default .navbar-toggle .icon-bar {
 #trails {
     background-image: linear-gradient( #91d940, #402a0f);
     color: #fff;
-    /* padding-bottom: 20px; */
-    /* margin-bottom: 20px; */
-}
-
-
-.trail {
-    margin: 10px 0;
 }
 
 .trail h3 {
@@ -298,25 +275,10 @@ header .navbar-default .navbar-toggle .icon-bar {
     width: 100%;
 }
 
-
-.photo {
-	/* width: 20px;
-	margin: 20px;
-	padding: 20px; 
-}
-
-
-.info {
-    /* 	width: 100%;
-	margin: 50px;
-	padding: 20px; */
-}
-
-
-@media only screen and (max-width: 768px) {  
+@media only screen and (max-width: 768px) {
     .info {
-    	padding: 20px;
-    	margin: 0px;
+        padding: 20px;
+        margin: 0px;
     }
 
     h3:last-of-type {
@@ -324,7 +286,6 @@ header .navbar-default .navbar-toggle .icon-bar {
         padding: 20px;
     }
 }
-
 
 
 /* Footer */
@@ -341,14 +302,15 @@ footer a {
 }
 
 footer a:hover {
-	color: #fff !important;
+    color: #fff !important;
 }
 
 footer .phone {
-	font-size: 	1.4em;
-	font-weight: 700;
-	color: #ebe560 ;
+    font-size: 1.4em;
+    font-weight: 700;
+    color: #ebe560;
 }
+
 
 /* Footer navigation */
 
@@ -358,18 +320,11 @@ footer .navbar {
     min-height: 0;
 }
 
-footer .navbar-default{
-	background-color: transparent;
-	border: none;
-	margin-right: 40px;
+footer .navbar-default {
+    background-color: transparent;
+    border: none;
+    margin-right: 40px;
 }
-
-
-
-
-
-
-
 
 
 /* Hide skip to main content link 
@@ -385,9 +340,6 @@ a.skip-main {
     overflow: hidden;
     z-index: -999;
 }
-
-
-
 
 
 /* Show skip to content when tabing */
