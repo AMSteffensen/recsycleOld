@@ -21,7 +21,7 @@ body {
 
 h1, h2, h3 {
 	font-family: 'Lora', serif;
-	font-weight: 400;
+	fgitgiont-weight: 400;
 	margin: 0;
 }
 
@@ -42,17 +42,80 @@ h1, h2, h3 {
     color: #ebe560;
 }
 
-.navbar-default .navbar-nav>li>a:hover {
-    text-decoration: none;
+/* when navbar element is active change font weight to bold */
+header .navbar-default .navbar-nav .active a {
+	font-weight: 700;
+	padding-bottom: 20px;
+	text-decoration:underline;
+	color:#91d940;
+	background-color: transparent;
+	text-shadow:  none;
+}
+
+header .navbar-default .navbar-nav .active a:hover {
+	color: #E15D5F;
+    background-color: transparent;
+}
+/* Navbar brand logo */
+ .navbar-brand{
+  padding: 0;
+  margin: 0;
+  border-bottom: 4px solid #91d940;
+} 
+
+header .navbar-brand {
+	background: url(../images/logo.png);
+	background-repeat: no-repeat;
+	background-position: 15px 0px;
+	height: auto;
+}
+
+header .navbar-brand h1 {
+	color: white;
+	margin: 0;
+	font-size: 1.8em;
+	font-weight: 700;
+	padding-left: 105px;
+}
+
+header .navbar-brand span.subhead {
+	font-family: 'Lora', serif;
+	padding-left: 105px;
+	font-size: 	.7em;
+	font-weight: 400;
+	display: block;
+	text-transform: uppercase;
+}
+
+
+.navbar-default .navbar-brand #heading {
+    color: #16a84a;
+}
+
+.navbar-default .navbar-brand span {
+    color: #fff;
+}
+
+/** Navbar toggle **/
+header .navbar-toggle {
+	background-color:#5f91ff;
+}
+/* Change default background collor of toggle button */
+header .navbar-default .navbar-toggle .icon-bar {
+	background-color: #ebe560;
+}
+
+/* Change color of toggle button both on focus and hover to white */
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
     background-color: #fff;
 }
 
-/* logo clearfix */
-.navbar-brand{
-  padding: 0;
-  margin: 0;
+/* Make more contrast to navbar when active */
+header .navbar-collapse {
+	background-color: rgba(0,0,0, .5);
 }
 
+/* Footer navigation */
 .navbar.footer {
 	background-color: white;
 }
@@ -72,10 +135,8 @@ h1, h2, h3 {
     width: 50%;
 }
 
-/* Text */
-
 /* Hide skip to main content link 
-Source: https://accessibility.oit.ncsu.edu/it-accessibility-at-nc-state/developers/accessibility-handbook/mouse-and-keyboard-events/skip-to-main-content/)
+Source: https://accessibility.oit.ncsu.edu/ 2018 IT Acvcessibilty Handbook - Skip to main content
 */
 a.skip-main {
 	left:-999px;
@@ -101,7 +162,7 @@ a.skip-main:focus, a.skip-main:active {
     margin: 80px 30%;
     padding:25px;
     border-radius: 25px;
-    border:15px solid yellow;
+    border:15px solid #ebe560;
     text-align:center;
     font-size:1.2em;
     z-index: 999;
