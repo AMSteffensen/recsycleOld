@@ -30,6 +30,7 @@ h3 {
 
 
 
+
 /* Header Navigation */
 
 .navbar {
@@ -46,11 +47,13 @@ header .navbar {
 
 
 
+
 /* Navbar change default styles*/
 
 .navbar-default .navbar-nav>li>a {
     color: #ebe560;
 }
+
 
 
 /* when navbar element is active change font weight to bold */
@@ -68,6 +71,7 @@ header .navbar-default .navbar-nav .active a:hover {
     color: #E15D5F;
     background-color: transparent;
 }
+
 
 
 
@@ -116,17 +120,20 @@ header .navbar-brand span.subhead {
 
 
 
+
 /** Navbar toggle **/
 
 header .navbar-toggle {
     background-color: #5f91ff;
 }
 
+
 /* Change default background collor of toggle button */
 
 header .navbar-default .navbar-toggle .icon-bar {
     background-color: #ebe560;
 }
+
 
 
 
@@ -146,17 +153,6 @@ header .navbar-default .navbar-toggle .icon-bar {
 }
 
 
-
-
-/* Footer navigation */
-
-.navbar.footer {
-    background-color: white;
-}
-
-
-
-
 /** PAGE **/
 
 .page {
@@ -170,6 +166,7 @@ header .navbar-default .navbar-toggle .icon-bar {
 
 
 
+
 /** PAGE - Mission **/
 
 #mission {
@@ -177,6 +174,7 @@ header .navbar-default .navbar-toggle .icon-bar {
     background-image: linear-gradient(to bottom, #16a84a, #91d940);
     border-top: 50px solid rgba(64, 42, 15, .5);
 }
+
 
 
 /* Style mission text to make it stand out */
@@ -187,8 +185,6 @@ header .navbar-default .navbar-toggle .icon-bar {
     letter-spacing: 3px;
     text-shadow: 3px 2px rgba(0, 0, 0, .5);
 }
-
-
 
 
 /* Disable carousel on small screen devices */
@@ -204,7 +200,6 @@ header .navbar-default .navbar-toggle .icon-bar {
         padding-top: 100px;
     }
 }
-
 
 
 /** PAGE - About us **/
@@ -237,10 +232,11 @@ header .navbar-default .navbar-toggle .icon-bar {
 
 
 
+
 /* Styling buttons */
 
 .btn-primary {
-	background:#5f91ff ;
+    background: #5f91ff;
     padding: 14px 24px;
     border: 0 none;
     font-weight: 700;
@@ -248,19 +244,19 @@ header .navbar-default .navbar-toggle .icon-bar {
     text-transform: uppercase;
 }
 
+
 /* Style Call to action button */
+
 .btn.outline {
-	margin: 0 auto;
-	background: none;
-	width: 50%;
-	text-align: center;
-	padding: 12px 22px;
-	display: block;
-	margin-left: auto;
+    margin: 0 auto;
+    background: none;
+    width: 50%;
+    text-align: center;
+    padding: 12px 22px;
+    display: block;
+    margin-left: auto;
     margin-right: auto;
     border: 2px solid #fff;
-	
-
 }
 
 .btn-primary:hover,
@@ -269,74 +265,104 @@ header .navbar-default .navbar-toggle .icon-bar {
 .btn-primary.active,
 .open>.dropdown-toggle.btn-primary {
     background: #ebe560;
-    color: #5f91ff  ;
+    color: #5f91ff;
 }
+
 
 /** PAGE - Bike trails **/
 
 #trails {
-	background-image: linear-gradient( #91d940, #402a0f); 
-	color:  #fff;
-	/* padding-bottom: 20px; */
-	/* margin-bottom: 20px; */
+    background-image: linear-gradient( #91d940, #402a0f);
+    color: #fff;
+    /* padding-bottom: 20px; */
+    /* margin-bottom: 20px; */
 }
 
 
 .trail {
-	margin: 10px 0;
+    margin: 10px 0;
 }
 
 .trail h3 {
-	font-weight: 600;
-	font-size: 1.2em;
-	color: #402a0f 	;
-	padding-bottom: 5px;
+    font-weight: 600;
+    font-size: 1.2em;
+    color: #142b48;
+    padding-bottom: 5px;
 }
 
 .trail p {
-		font-size: 	.8em;
+    font-size: .8em;
 }
 
 .trail img {
-	width: 100%;
+    width: 100%;
 }
 
 
-/*
 .photo {
 	/* width: 20px;
 	margin: 20px;
 	padding: 20px; 
 }
-*/
-.info {
 
-/* 	width: 100%;
+
+.info {
+    /* 	width: 100%;
 	margin: 50px;
 	padding: 20px; */
-
 }
 
 
-/*
-#16a84a;
-#91d940;
-#5f91ff;
-#402a0f; (rgba(64, 42, 15, 1))
-#ebe560;
+@media only screen and (max-width: 768px) {  
+    .info {
+    	padding: 20px;
+    	margin: 0px;
+    }
 
-*/
+    h3:last-of-type {
+        color: white;
+        padding: 20px;
+    }
+}
+
+
 
 /* Footer */
 
 footer {
-	 background-color: #402a0f; 
+    background-color: #402a0f;
+    color: #fff;
+    font-size: .8em;
+    padding: 20px 0 40px 0;
 }
 
+footer a {
+    background-color: #402a0f;
+}
 
+footer a:hover {
+	color: #fff !important;
+}
 
+footer .phone {
+	font-size: 	1.4em;
+	font-weight: 700;
+	color: #ebe560 ;
+}
 
+/* Footer navigation */
 
+footer .navbar {
+    background-color: white;
+    margin-bottom: 0;
+    min-height: 0;
+}
+
+footer .navbar-default{
+	background-color: transparent;
+	border: none;
+	margin-right: 40px;
+}
 
 
 
@@ -359,6 +385,7 @@ a.skip-main {
     overflow: hidden;
     z-index: -999;
 }
+
 
 
 
