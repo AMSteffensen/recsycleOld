@@ -274,6 +274,54 @@ header .navbar-default .navbar-toggle .icon-bar {
 
 /** PAGE - Bike trails **/
 
+#trails {
+	background-image: linear-gradient(to bottom, #91d940, #402a0f);
+	color:  #fff;
+}
+
+
+/*
+#16a84a;
+#91d940;
+#5f91ff;
+#402a0f; (rgba(64, 42, 15, 1))
+#ebe560;
+
+/*
+.photo {
+	/* width: 20px;
+	margin: 20px;
+	padding: 20px; 
+}
+*/
+.info {
+/* 	width: 100%;
+	margin: 50px;
+	padding: 20px; */
+
+}
+
+
+/* Footer */
+
+footer {
+	background-color: #402a0f	;
+	margin-bottom: 0px;
+	margin-bottom: -100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Hide skip to main content link 
 Source: https://accessibility.oit.ncsu.edu/ 2018 IT Acvcessibilty Handbook - Skip to main content
