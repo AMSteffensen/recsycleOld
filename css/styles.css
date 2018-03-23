@@ -3,9 +3,8 @@ Colors
 #16a84a;
 #91d940;
 #5f91ff;
-#402a0f;
+#402a0f; (rgba(64, 42, 15, 1))
 #ebe560;
-
 
 font-family: 'Lora', serif;
 font-family: 'Ubuntu', sans-serif;
@@ -14,7 +13,6 @@ font-family: 'Ubuntu', sans-serif;
 @import url('https://fonts.googleapis.com/css?family=Lora:400,700,700i|Ubuntu:300,400,700');
 
 body {
-	padding-top: 50px;
 	font-family: 'Ubuntu', sans-serif;
 	font-weight: 100;
 	font-size: 2em;
@@ -27,15 +25,27 @@ h1, h2, h3 {
 	margin: 0;
 }
 
-
-
-/* Navigation */
+/* Header Navigation */
 .navbar {
   border-radius: 0;
   border: 0;
-  background-color: #402a0f;
+  background-color: rgba(64, 42, 15, 0.5);
+  color: white;
 }
 
+ header .navbar {
+	padding: 20px 0;
+} 
+
+/* Navbar change default styles*/
+.navbar-default .navbar-nav>li>a {
+    color: #ebe560;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    text-decoration: none;
+    background-color: #fff;
+}
 
 /* logo clearfix */
 .navbar-brand{
@@ -53,9 +63,8 @@ h1, h2, h3 {
 
 .page h2 {
 	text-align: center;
-	margin-bottom: 30px;
+	 margin-bottom: 30px; 
 }
-
 
 .calltoaction img {
     margin-left: 0;
@@ -63,6 +72,46 @@ h1, h2, h3 {
     width: 50%;
 }
 
-
-
 /* Text */
+
+/* Hide skip to main content link 
+Source: https://accessibility.oit.ncsu.edu/it-accessibility-at-nc-state/developers/accessibility-handbook/mouse-and-keyboard-events/skip-to-main-content/)
+*/
+a.skip-main {
+	left:-999px;
+    position:absolute;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    z-index:-999;
+
+}
+
+/* Show skip to content when tabing */
+
+a.skip-main:focus, a.skip-main:active {
+    color: #fff;
+    background-color:#000;
+    left: auto;
+    top: auto;
+    width: 30%;
+    height: auto;
+    overflow:auto;
+    margin: 80px 30%;
+    padding:25px;
+    border-radius: 25px;
+    border:15px solid yellow;
+    text-align:center;
+    font-size:1.2em;
+    z-index: 999;
+}
+
+@media only screen and (max-width: 600px) {
+    a.skip-main:focus, a.skip-main:active {   
+    margin: 80px 30%;
+    padding:5px;
+    border-radius: 25px;
+    width: auto;
+    }
+}
